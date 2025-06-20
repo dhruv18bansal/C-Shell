@@ -1,0 +1,15 @@
+echo hi 
+ echo hey
+sleep 3 
+ echo hi
+sleep 5 
+sleep 3
+sleep 5 
+sleep 8 
+echecho hi
+echo hi
+hop .
+hop ..
+hop mainpro
+hop new
+ hop ~/one

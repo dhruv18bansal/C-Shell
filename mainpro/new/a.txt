@@ -1,0 +1,12 @@
+this should not be printed2hop poo > a.txt execute me
+hop token
+hop
+poo token
+poo
+> token
+what is this?hop
+what is this?poo
+going herepoo
+id it coming here ?Trying to change to directory: poo
+Changed directory to: /mnt/c/Users/radha/Desktop/osn/mp1/mainpro/new/poo
+[1;33mradha[0m@[1;36mRadhaslaptop[0m:[1;32m~/new/poo[0m>

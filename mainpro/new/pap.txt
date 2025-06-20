@@ -1,0 +1,12 @@
+this should not be printed2hop new > pap.txt execute me
+hop token
+hop
+new token
+new
+> token
+what is this?hop
+what is this?new
+going herenew
+id it coming here ?Trying to change to directory: new
+No such directory exists!
+[1;33mradha[0m@[1;36mRadhaslaptop[0m:[1;32m~/new[0m>

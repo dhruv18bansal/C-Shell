@@ -1,0 +1,15 @@
+reveal
+reveal new
+reveal
+ls
+reveal -l
+seek -f -d new
+seek -d new
+hop new
+reveal -l
+hop new
+hop poo
+hop ~
+hop -
+hop .
+hop ..

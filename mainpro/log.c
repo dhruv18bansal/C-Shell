@@ -2,9 +2,11 @@
 #include "log.h"
 
 #define LOG_FILE "command_log.txt"
-
+#define AA 2000
 void load_log(char log[MAX_LOG_SIZE][MAX_COMMAND_LENGTH], int *log_count) {
-    FILE *file = fopen(LOG_FILE, "r");
+   char log_file_path[AA];
+    sprintf(log_file_path, "%s/%s", home_dir, LOG_FILE);
+    FILE *file = fopen(log_file_path, "r");
     if (file) {
         char line[MAX_COMMAND_LENGTH];
         *log_count = 0;
@@ -18,7 +20,9 @@ void load_log(char log[MAX_LOG_SIZE][MAX_COMMAND_LENGTH], int *log_count) {
 }
 
 void save_log(char log[MAX_LOG_SIZE][MAX_COMMAND_LENGTH], int log_count) {
-    FILE *file = fopen(LOG_FILE, "w");
+    char log_file_path[AA];
+    sprintf(log_file_path, "%s/%s", home_dir, LOG_FILE);
+    FILE *file = fopen(log_file_path, "w");
     if (file) {
         for (int i = 0; i < log_count; i++) {
             fprintf(file, "%s\n", log[i]);
@@ -50,6 +54,9 @@ void add_to_log(char log[MAX_LOG_SIZE][MAX_COMMAND_LENGTH], int *log_count, cons
 }
 
 void purge_log(char log[MAX_LOG_SIZE][MAX_COMMAND_LENGTH], int *log_count) {
+     char log_file_path[AA];
+    sprintf(log_file_path, "%s/%s", home_dir, LOG_FILE);
+    remove(log_file_path);
     *log_count = 0;
-    remove(LOG_FILE);
+    remove(log_file_path);
 }
